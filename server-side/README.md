@@ -2,12 +2,14 @@
 
 This module covers my documentation of the PortSwigger Web security Academy's **Server-side vulnerabilities** path (labs 1-52).
 
-The goal is not just to solve labs, but to understand the root cause of each vulnerability, how its exploitation manifests in system and network logs, and how I would detect and prevent it in my home SOC lab.
+The goal is to understand the root cause of each vulnerability, how
+exploitation works, and to formulate detection hypotheses — even before
+having the full infrastructure to test them.
 
 ## Categories
 
-- [Path Traversal](./path-traversal/) (3 labs)
-- Access Control (coming next)
+- [Path Traversal](./path-traversal/) (1 lab)
+- [Access Control](./access-control/) (4 labs done)
 - Authentication
 - Server-Side Request Forgery (SSRF)
 - File Upload Vulnerabilities
@@ -18,13 +20,13 @@ The goal is not just to solve labs, but to understand the root cause of each vul
 
 For every lab completed:
 
-1. **Exploit** the vulnerability.
-2. **Document** the exact steps.
-3. **Design** a detection rule (Sigma, Wazuh, Sysmon/Auditd) based on observable artifacts.
+1. **Exploit** the vulnerability
+2. **Document** the exact steps
+3. **Hypothesize** how it could be detected (logs, events)
 4. **Map** to MITRE ATT&CK
 
-All write-ups include a defensive perspective, connecting the attack to logs I would monitor in my home lab (Apache, Windows Event Logs, Sysmon, Auditd, Wazuh).
+## Note
 
-## Home Lab Context
-
-My home lab runs Windows AD, Linux endpoints, Apache web servers, and Wazuh SIEM. This documentation extends that lab by simulating offensive techniques and designing detection logic for them.
+I don't yet run a public web server in my home SOC lab. The detection
+sections are hypotheses for now. When I add one, I'll revisit these labs
+and update them with real detection rules.
