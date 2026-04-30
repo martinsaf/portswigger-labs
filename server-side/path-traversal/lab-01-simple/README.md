@@ -4,6 +4,12 @@
 **Difficulty:** Apprentice
 **Objective:** Retrieve the contents of `/etc/passwd`.
 
+## 0. Attacker mindset
+
+Any user-supplied input that is used to construct a file path is a candidate for path transversal. If the application prepends a base directory but does not sanitize the input, injecting `../` sequences can escape the intended folder and reach arbitrary files on the system.
+
+The presence of a `filename` parameter in an image loading endpoint is a strong signal to test traversal payloads.
+
 ## 1. What is the vulnerability?
 
 The application uses the `filename` parameter directly to build a file path on the server by concatenating it to the base directory `/var/www/images`. For example, `filename=218.png` returns the file `/var/www/images/218.png`.
@@ -26,11 +32,19 @@ The problem is that the application does not validate or sanitize the input. Thi
 
 [Content of /etc/passwd extracted](screenshots/lab-01-passwd.txt)
 
-## 3. How would I detect this in my home lab?
-*To be tested.*
+## 3. Impact
+
+A successful path traversal can lead to:
+- Disclosure of sensitive operating system files (e.g., `/etc/passwd`, `/etc/shadow`, configuration files)
+- Leakage of application source code and hardcoded credentials
+- In servere cases, writing to arbitrary files, leading to remote code execution
 
 ## 4. How can it be fixed?
-*To be tested*
 
-**MITRE ATT&CK:** [T1190 - Exploit Public-Facing Application]
+- Never concatenate user input directly into file paths
+- Use a whitelist of allowed filenames and map them to actual files on the server
+- If user input must be part of the path, normalize the path using functions like `realpath()` and verify that it starts with the expected base directory
+- Run the web server process with minimal file system permissions
+
+**MITRE ATT&CK:** [T1190 - Exploit Public-Facing Application](https://attack.mitre.org/techniques/T1190/)
 
