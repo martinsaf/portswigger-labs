@@ -4,6 +4,10 @@
 **Difficulty:** Apprentice
 **Objective:** Retrieve the administrator's password and use it to delete user `carlos`.
 
+## 0. Attacker mindset
+
+An IDOR that exposes another user's account page is a horizontal escalation opportunity. But if that page leaks credentials - such as a password pre-filled in a masked input - the attacker can escalate vertically by stealing an admin's password. The approach is to enumerat user identifiers, access privileged accounts, and extract any sensitive data that appears in the page source.
+
 ## 1. What is the vulnerability?
 
 The application uses a user-supplied `id` parameter to determine which account page to display, but it does not verify whether the logged-in user is authorized to access that account. This is an Insecure Direct Object Reference (IDOR) that allows horizontal privilege escalation.
@@ -20,11 +24,18 @@ Even worse, the account page shows the current user's password pre-filled in a m
 5. Logged out and logged in as `administrator` using the stolen password `ibdy1d4czlco5gaufyqn`
 6. Accessed the admin panel and deleted user `carlos` to solve the lab.
 
-## 3. How would I detect this in my home lab?
-*To be tested*
+## 3. Impact
+
+- Horizontal escalation to an administrator's account via IDOR
+- Exposure of the admin's password in client-side HTML, enabling full account takeover
+- Complete compromise of administrative functionality (user deletion, data manipulation)
+- Combination of horizontal and vertical privilege escalation in a single attack flow
 
 ## 4. How can it be fixed?
-*To be tested*
+
+- Enforce strict server-side authorization checks: verify that the logged-in user owns the account identified by the `id` parameter before returning any data
+- Never include the current password (or any sensitive credentials) in the HTML source; use a secure password-change flow that requires the user to supply the current password without it being served by the server
+- Do not expose user identifiers that allow horizontal enumeration; use session-based references instead of direct object references in URLs
 
 **MITRE ATT&CK:**
 - [T1548 - Abuse Elevation Control Mechanism](https://attack.mitre.org/techniques/T1548/)

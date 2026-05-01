@@ -45,5 +45,4 @@ In real-world scenarios, SSRF can also be used to:
 - Block requests to internal IP addresses such as 127.0.0.1 and private network ranges
 - Avoid making unnecessary outbound requests from the server
 
-
 **MITRE ATT&CK:** [T1190 - Exploit Public-Facing Application](https://attack.mitre.org/techniques/T1190/)
