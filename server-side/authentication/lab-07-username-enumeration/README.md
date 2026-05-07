@@ -1,7 +1,7 @@
 # Lab: Username enumeration via different responses
 
-**Category:** Authentication
-**Difficulty:** Apprentice
+**Category:** Authentication\
+**Difficulty:** Apprentice\
 **Objective:** Enumerate a valid username, brute-force the password, and access the account page.
 
 ## 0. Attacker mindset
@@ -39,5 +39,7 @@ Once a valid username is identified, the same login endpoint can be brute-forced
 - Use CAPTCHA or other challenges on repeated failures
 - Implement multi-factor authentication (2FA) to protect against credential attacks even if usernames and passwords are guessed
 - Log failed attempts and monitor for unusual patterns without disclosing information to the attacker
+
+---
 
 **MITRE ATT&CK:** [T1110 - Brute Force](https://attack.mitre.org/techniques/T1110/)

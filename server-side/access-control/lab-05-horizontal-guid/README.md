@@ -1,7 +1,7 @@
 # Lab: User ID controlled by request parameter, with unpredictable user IDs
 
-**Category:** Access Control
-**Difficulty:** Apprentice
+**Category:** Access Control\
+**Difficulty:** Apprentice\
 **Objective:** Find the GUID for `carlos` and submit his API key to solve the lab.
 
 ## 0. Attacker mindset
@@ -31,5 +31,7 @@ The application identifies users via GUIDs in the `id` parameter on the account 
 - Avoid exposing user identifiers (including GUIDs) in public areas of the application; use pseudonyms or generic references where possible
 - Enforce server-side authorization checks on every account page request: verify that the logged-in user matches the requested resource
 - Do not rely on the unpredictability of GUIDs as the sole layer of access control
+
+---
 
 **MITRE ATT&CK:** [T1548 - Abuse Elevation Control Mechanism](https://attack.mitre.org/techniques/T1548/)

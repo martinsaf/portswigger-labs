@@ -11,4 +11,6 @@ SSRF vulnerabilities allow an attacker to induce the server to make requests to 
 - Potential acess to sensitive data (e.g., internal APIs or metadata services)
 
 ## Labs
+
 1. [Basic SSRF against the local server](./lab-09-basic-ssrf/README.md) - Apprentice
+2. [Basic SSRF against another back-end system](./lab-10-ssrf-backend-system/README.md) - Apprentice

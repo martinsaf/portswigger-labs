@@ -1,7 +1,7 @@
 #  Lab: Remote code execution via web shell upload
 
-**Category:** File Upload
-**Difficulty:** Apprentice
+**Category:** File Upload\
+**Difficulty:** Apprentice\
 **Objective:** Upload a PHP web shell, then exfiltrate the contents of `/home/carlos/secret`
 
 ## 0. Attacker mindset
@@ -36,5 +36,7 @@ The application's avatar upload function does not perform any validation on the 
     * Store uploaded files outside the web root or with a randomized name to prevent direct execution
 - Configure the web server to not execute scripts in upload directories
 - Set appropriate filesystem permissions on upload folders to limit the impact of any malicious file that does sneak through
+
+---
 
 **MITRE ATT&CK:** [T1190 - Exploit Public-Facing Application](https://attack.mitre.org/techniques/T1190/)

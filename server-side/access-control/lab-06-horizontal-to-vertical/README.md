@@ -1,7 +1,7 @@
 # Lab: User ID controlled by request parameter with password disclosure
 
-**Category:** Access Control
-**Difficulty:** Apprentice
+**Category:** Access Control\
+**Difficulty:** Apprentice\
 **Objective:** Retrieve the administrator's password and use it to delete user `carlos`.
 
 ## 0. Attacker mindset
@@ -36,6 +36,8 @@ Even worse, the account page shows the current user's password pre-filled in a m
 - Enforce strict server-side authorization checks: verify that the logged-in user owns the account identified by the `id` parameter before returning any data
 - Never include the current password (or any sensitive credentials) in the HTML source; use a secure password-change flow that requires the user to supply the current password without it being served by the server
 - Do not expose user identifiers that allow horizontal enumeration; use session-based references instead of direct object references in URLs
+
+---
 
 **MITRE ATT&CK:**
 - [T1548 - Abuse Elevation Control Mechanism](https://attack.mitre.org/techniques/T1548/)

@@ -1,8 +1,8 @@
 
 # Lab: Unprotected admin functionality with unpredictable URL
 
-**Category:** Access Control
-**Difficulty:** Apprentice
+**Category:** Access Control\
+**Difficulty:** Apprentice\
 **Objective:** This lab has an unprotected admin panel. It's located at an unpredictable location, but the location is disclosed somewhere in the application. Solve the lab by accessing the admin panel, and using it to delete the user `carlos`.
 
 ## 0. Attacker mindset
@@ -30,5 +30,7 @@ The application hides the admin panel behind a less predictable URL (`/admin-x31
 - Do not embed sensitive URLs in client-side code that is accessible to unprivileged users
 - Enforce proper server-side authentication and authorization on every privileged page, regardless of the URL
 - Treat security through obscurity as a minor hurdle, not a defense layer
+
+---
 
 **MITRE ATT&CK:** [T1548 - Abuse Elevation Control Mechanism](https://attack.mitre.org/techniques/T1548/)

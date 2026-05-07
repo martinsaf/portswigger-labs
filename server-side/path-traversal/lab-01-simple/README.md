@@ -1,7 +1,7 @@
 # Lab: File path traversal, simple case
 
-**Category:** Path Traversal
-**Difficulty:** Apprentice
+**Category:** Path Traversal\
+**Difficulty:** Apprentice\
 **Objective:** Retrieve the contents of `/etc/passwd`.
 
 ## 0. Attacker mindset
@@ -45,6 +45,8 @@ A successful path traversal can lead to:
 - Use a whitelist of allowed filenames and map them to actual files on the server
 - If user input must be part of the path, normalize the path using functions like `realpath()` and verify that it starts with the expected base directory
 - Run the web server process with minimal file system permissions
+
+---
 
 **MITRE ATT&CK:** [T1190 - Exploit Public-Facing Application](https://attack.mitre.org/techniques/T1190/)
 

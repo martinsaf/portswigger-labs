@@ -1,7 +1,7 @@
 # Lab: SQL injection Vulnerability in WHERE clause allowing retrieval of hidden data
 
-**Category:** SQL Injection
-**Difficulty:** Apprentice
+**Category:** SQL Injection\
+**Difficulty:** Apprentice\
 **Objective:** Perform a SQL injection to display unreleased products
 
 ## 0. Attacker mindset
@@ -31,5 +31,7 @@ The product category filter passes user input directly into a SQL query without 
 - Validate and sanitize user input, allowing only expected characters
 - Apply the principle of least privilege to the database user
 - Use stored procedures to encapsulate query logic, avoiding dynamic SQL
+
+---
 
 **MITRE ATT&CK:** [T1190 - Exploit Public-Facing Application](https://attack.mitre.org/techniques/T1190/)

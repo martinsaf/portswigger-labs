@@ -1,7 +1,7 @@
 # Lab: SQL injection vulnerability allowing login bypass
 
-**Category:** SQL Injection
-**Difficulty:** Apprentice
+**Category:** SQL Injection\
+**Difficulty:** Apprentice\
 **Objective:** Log in as the `administrator` user without a password.
 
 ## 0. Attacker mindset
@@ -32,5 +32,7 @@ The login function builds a SQL query by directly embedding the supplied usernam
 - Never trust user input; validate and sanitize data before using it in queries
 - Implement proper error handling to avoid leaking database information
 - Apply least privilege to database accounts used by web applications
+
+---
 
 **MITRE ATT&CK:** [T1190 - Exploit Public-Facing Application](https://attack.mitre.org/techniques/T1190/)

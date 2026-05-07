@@ -4,9 +4,7 @@ This module covers my documentation of the PortSwigger Web security Academy's **
 
 **Status:** Completed on 04 May 2026
 
-The goal is to understand the root cause of each vulnerability, how
-exploitation works, and to formulate detection hypotheses — even before
-having the full infrastructure to test them.
+The goal is to understand the root cause of each vulnerability, how exploitation works, and to formulate detection hypotheses — even before having the full infrastructure to test them.
 
 ## Categories
 

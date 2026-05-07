@@ -1,7 +1,7 @@
 # Lab: Basic SSRF against another back-end system
 
-**Category:** SSRF
-**Difficulty:** Apprentice
+**Category:** SSRF\
+**Difficulty:** Apprentice\
 **Objective:** Scan the internal `192.168.0.X` range on port 8080 to find an admin interface, then delete user `carlos`
 
 ## 0. Attacker mindset
@@ -31,5 +31,7 @@ The stock check feature makes server-side requests to user-controllable URLs. Si
 - Block the server from making requests to internal IP ranges (RFC 1918) and loopback addresses
 - Segment internal networks and enforce strict firewall policies between application servers and backend systems
 - Apply the principle of least privilege: the application server should only have network access to services it strictly needs
+
+---
 
 **MITRE ATT&CK:** [T1190 - Exploit Public-Facing Application](https://attack.mitre.org/techniques/T1190/)

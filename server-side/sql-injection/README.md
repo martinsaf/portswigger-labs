@@ -12,4 +12,6 @@ SQL injection allows an attacker to interfere with the queries an application ma
 - Remote code execution on the database server
 
 ## Labs
+
 1. [Retrieve hidden data](./lab-14-retrieve-hidden-data/README.md) - Apprentice
+2. [Login bypass](./lab-15-login-bypass/README.md) - Apprentice

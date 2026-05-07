@@ -1,7 +1,7 @@
 # Lab: User role controlled by request parameter
 
-**Category:** Access Control
-**Difficulty:** Apprentice
+**Category:** Access Control\
+**Difficulty:** Apprentice\
 **Objective:** Access the admin panel at `/admin` and delete user `carlos`
 
 ## 0. Attacker mindset
@@ -31,5 +31,7 @@ The application relies on a client-side cookie to determine user privileges. The
 - Never rely on client-side data (cookies, hidden fields, URL parameters) for authorization decisions
 - Store user roles and permissions on the server, associated with the session identifier
 - Validate the user's role on the server for every priviledged request, regardless of what the client sends
+
+---
 
 **MITRE ATT&CK:** [T1548 - Abuse Elevation Control Mechanism](https://attack.mitre.org/techniques/T1548/)

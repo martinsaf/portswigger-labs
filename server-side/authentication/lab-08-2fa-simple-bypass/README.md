@@ -1,7 +1,7 @@
 # Lab: 2FA simple bypass
 
-**Category:** Authentication
-**Difficulty:** Apprentice
+**Category:** Authentication\
+**Difficulty:** Apprentice\
 **Objective:** Bypass the two-factor authentication and access Carlos's account page.
 
 ## 0. Attacker mindset
@@ -35,5 +35,7 @@ Because the server does not enforce the 2FA check on every subsequent request, a
 - The server must maintain the authentication state correctly: the session should not be marked as fully authenticated until **all** required factors are successfully completed
 - Every request to a protected resource must check whether the current session has passed the complete authentication process, including the 2FA step 
 - Do not grant access to any page that requires full authentication based solely on the password step being completed
+
+---
 
 **MITRE ATT&CK:** [T1110 - Brute Force](https://attack.mitre.org/techniques/T1110/)

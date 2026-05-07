@@ -1,7 +1,7 @@
 # Lab: Web shell upload via Content-Type restriction bypass
 
-**Category:** File Upload
-**Difficulty:** Apprentice
+**Category:** File Upload\
+**Difficulty:** Apprentice\
 **Objective:** Upload a PHP web shell and exfiltrate `/home/carlos/secret`
 
 ## 0. Attacker mindset
@@ -35,5 +35,7 @@ The image upload function attempts to enforce a file type restriction by checkin
 - Validate file type using server-side checks such as magic byte inspection or dedicated libraries (e.g., `libmagic`)
 - Use a whitelist of allowed file extensions and verify file signatures independently of MIME headers
 - Store uploaded files outside the web root or configure the server to not execute script in upload directories
+
+---
 
 **MITRE ATT&CK:** [T1190 - Exploit Public-Facing Application](https://attack.mitre.org/techniques/T1190/)

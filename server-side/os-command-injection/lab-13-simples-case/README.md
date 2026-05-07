@@ -1,7 +1,7 @@
 # Lab: OS command injection, simple case
 
-**Category:** OS Command Injection
-**Difficulty:** Apprentice
+**Category:** OS Command Injection\
+**Difficulty:** Apprentice\
 **Objective:** Execute `whoami` via the product stock checker
 
 ## 0. Attacker mindset
@@ -32,5 +32,7 @@ The stock check feature constructs a shell command (`stockreport.sh`) with the u
 - If unavoidable, strickly validate input against an allowlist (e.g., only numeric characters)
 - Escape or sanitize shell metacharacters before passing to a command
 - Run the application with least-privilege system permissions
+
+---
 
 **MITRE ATT&CK:** [T1059 - Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059/)

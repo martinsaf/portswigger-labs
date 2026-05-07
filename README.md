@@ -9,37 +9,88 @@ A collection of write-ups for each lab I solve. Each one documents the vulnerabi
 ## Structure
 
 ```
-portswigger-labs/
-│   README.md
+portswigger-labs
 │
-└───server-side
+├───server-side
+│   │   README.md
+│   │
+│   ├───access-control
+│   │   │   README.md
+│   │   │
+│   │   ├───lab-02-unprotected-admin
+│   │   │       README.md
+│   │   │
+│   │   ├───lab-03-unpredictable-url
+│   │   │       README.md
+│   │   │
+│   │   ├───lab-04-role-cookie
+│   │   │       README.md
+│   │   │
+│   │   ├───lab-05-horizontal-guid
+│   │   │       README.md
+│   │   │
+│   │   └───lab-06-horizontal-to-vertical
+│   │           README.md
+│   │
+│   ├───authentication
+│   │   │   README.md
+│   │   │
+│   │   ├───lab-07-username-enumeration
+│   │   │       README.md
+│   │   │
+│   │   └───lab-08-2fa-simple-bypass
+│   │           README.md
+│   │
+│   ├───file-upload
+│   │   │   README.md
+│   │   │
+│   │   ├───lab-11-web-shell-upload
+│   │   │       exploit_script.php
+│   │   │       README.md
+│   │   │       versatile_exploit_script.php
+│   │   │
+│   │   └───lab-12-content-type-bypass
+│   │           README.md
+│   │
+│   ├───os-command-injection
+│   │   │   README.md
+│   │   │
+│   │   └───lab-13-simples-case
+│   │           README.md
+│   │
+│   ├───path-traversal
+│   │   │   README.md
+│   │   │
+│   │   └───lab-01-simple
+│   │       │   README.md
+│   │       │
+│   │       └───screenshots
+│   │               lab-01-passwd.txt
+│   │               lab-01-response.jpg
+│   │
+│   ├───sql-injection
+│   │   │   README.md
+│   │   │
+│   │   ├───lab-14-retrieve-hidden-data
+│   │   │       README.md
+│   │   │
+│   │   └───lab-15-login-bypass
+│   │           README.md
+│   │
+│   └───ssrf
+│       │   README.md
+│       │
+│       ├───lab-09-basic-ssrf
+│       │       README.md
+│       │
+│       └───lab-10-ssrf-backend-system
+│               README.md
+│
+└───sql-injection
     │   README.md
     │
-    ├───access-control
-    │   │   README.md
-    │   │
-    │   ├───lab-02-unprotected-admin
-    │   │       README.md
-    │   │
-    │   ├───lab-03-unpredictable-url
-    │   │       README.md
-    │   │
-    │   ├───lab-04-role-cookie
-    │   │       README.md
-    │   │
-    │   └───lab-05-horizontal-guid
-    │           README.md
-    │
-    └───path-traversal
-        │   README.md
-        │
-        └───lab-01-simple
-            │   README.md
-            │
-            ├───detection
-            └───screenshots
-                    lab-01-passwd.txt
-                    lab-01-response.jpg
+    └───lab-01-union-columns
+            README.md
 ```
 
 ## Why 
@@ -50,4 +101,8 @@ Currently, I don't have a public web server in my lab, so the detection sections
 
 ## Status
 
-In progress. Labs solved: 5/52
+*In progress.*
+
+Paths:
+- Server-side vulnerabilities: 52 of 52 Completed
+- SQL injection: 14 of 51 Completed

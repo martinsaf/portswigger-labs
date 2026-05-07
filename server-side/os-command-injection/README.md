@@ -10,4 +10,4 @@ OS command injection allows an attacker to execute arbitrary commands on the ser
 - Execution of system commands with the privileges of the web server process
 
 ## Labs
-1. [Simple case](./lab-13-simple-case/) - Apprentice
+1. [OS command injection, simple case](./lab-13-simple-case/) - Apprentice
