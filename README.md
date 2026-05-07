@@ -9,7 +9,13 @@ A collection of write-ups for each lab I solve. Each one documents the vulnerabi
 ## Structure
 
 ```
-portswigger-labs
+D:\Dev\GitHub\martinsaf\portswigger-labs>tree /f
+Folder PATH listing for volume EXTERNAL_USB
+Volume serial number is 7879-3971
+D:.
+│   .gitattributes
+│   LICENSE
+│   README.md
 │
 ├───server-side
 │   │   README.md
@@ -89,7 +95,11 @@ portswigger-labs
 └───sql-injection
     │   README.md
     │
-    └───lab-01-union-columns
+    ├───lab-01-union-columns
+    │       README.md
+    │
+    └───lab-02-find-text-column
+            burp-notes.md
             README.md
 ```
 
@@ -105,4 +115,4 @@ Currently, I don't have a public web server in my lab, so the detection sections
 
 Paths:
 - Server-side vulnerabilities: 52 of 52 Completed
-- SQL injection: 14 of 51 Completed
+- SQL injection: 16 of 51 Completed

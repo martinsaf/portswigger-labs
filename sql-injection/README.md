@@ -15,7 +15,9 @@ This module covers the **Practitioner** learning path, focusing on UNION attacks
 
 1. [Retrieve hidden data](/server-side/sql-injection/lab-14-retrieve-hidden-data/README.md) - Apprentice
 2. [Login bypass](/server-side/sql-injection/lab-15-login-bypass/README.md) - Apprentice
-3. [UNION attack]()
+3. [UNION attack, determining the number of columns](./lab-01-union-columns/README.md) - Practitioner
+4. [SQL injection UNION attack, finding a column containing text](./lab-02-find-text-column/README.md) - Practitioner
+    - [Burp Suite Notes - SQL injection UNION attack, finding a column containing text](./lab-02-find-text-column/burp-notes.md)
 
 ## References
 
