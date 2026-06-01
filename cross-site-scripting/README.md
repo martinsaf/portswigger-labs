@@ -24,3 +24,6 @@ Cross-site scripting vulnerabilities allow an attacker to inject malicious JavaS
 
 1. [Reflected XSS into HTML context with nothing encoded](./lab-01-reflected-xss-simple/README.md) - Apprentice
 2. [Stored XSS into HTML context with nothing encoded](./lab-02-stored-xss-simple/README.md) - Apprentice 
+3. [DOM XSS in document.write sink using source location.search](./lab-03-dom-xss-document-write/README.md) - Apprentice
+4. [DOM XSS in innerHTML sink using source location.search](./lab-04-dom-xss-innerhtml/README.md) - Apprentice 
+5. [DOM XSS in jQuery anchor href attribute sink using location.search source](./lab-05-dom-xss-jquery-href/README.md) - Apprentice
