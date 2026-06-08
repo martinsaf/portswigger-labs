@@ -27,3 +27,8 @@ Cross-site scripting vulnerabilities allow an attacker to inject malicious JavaS
 3. [DOM XSS in document.write sink using source location.search](./lab-03-dom-xss-document-write/README.md) - Apprentice
 4. [DOM XSS in innerHTML sink using source location.search](./lab-04-dom-xss-innerhtml/README.md) - Apprentice 
 5. [DOM XSS in jQuery anchor href attribute sink using location.search source](./lab-05-dom-xss-jquery-href/README.md) - Apprentice
+6. [DOM XSS in jQuery selector sink using a hashchange event](./lab-06-dom-xss-jquery-hashchange/README.md) - Apprentice
+7. [Reflected XSS into attribute with angle brackets HTML-encoded](./lab-07-reflected-xss-attribute-encoded/README.md) - Apprentice
+8. [Stored XSS into anchor href attribute with double quotes HTML-encoded](./lab-08-stored-xss-href-javascript-protocol/README.md) - Apprentice
+9. [Reflected XSS into a JavaScript string with angle brackets HTML encoded](./lab-09-reflected-xss-js-string/README.md) - Apprentice
+10. [DOM XSS in document.write sink using source location.search inside a select element](./lab-10-dom-xss-document-write-select-element/README.md) - Practitioner
