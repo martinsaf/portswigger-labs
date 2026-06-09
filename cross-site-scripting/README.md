@@ -32,3 +32,5 @@ Cross-site scripting vulnerabilities allow an attacker to inject malicious JavaS
 8. [Stored XSS into anchor href attribute with double quotes HTML-encoded](./lab-08-stored-xss-href-javascript-protocol/README.md) - Apprentice
 9. [Reflected XSS into a JavaScript string with angle brackets HTML encoded](./lab-09-reflected-xss-js-string/README.md) - Apprentice
 10. [DOM XSS in document.write sink using source location.search inside a select element](./lab-10-dom-xss-document-write-select-element/README.md) - Practitioner
+11. [DOM XSS in AngularJS expression with angle brackets and double quotes HTML-encoded](./lab-11-dom-xss-angularjs-expression/README.md) - Practitioner
+12. [Reflected DOM XSS](./lab-12-reflected-dom-xss/README.md) - Practitioner
