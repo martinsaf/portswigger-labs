@@ -34,3 +34,4 @@ Cross-site scripting vulnerabilities allow an attacker to inject malicious JavaS
 10. [DOM XSS in document.write sink using source location.search inside a select element](./lab-10-dom-xss-document-write-select-element/README.md) - Practitioner
 11. [DOM XSS in AngularJS expression with angle brackets and double quotes HTML-encoded](./lab-11-dom-xss-angularjs-expression/README.md) - Practitioner
 12. [Reflected DOM XSS](./lab-12-reflected-dom-xss/README.md) - Practitioner
+13. [Stored DOM XSS](./lab-13-stored-dom-xss/README.md) - Practitioner
